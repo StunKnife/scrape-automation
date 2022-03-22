@@ -40,8 +40,9 @@ top_gainers %>%
            into = 'company_name',
            sep = '\t') -> top_gainers
 
+write_csv(top_gainers,paste0('data/','_top_gainers','.csv'))
 
-write_csv(top_gainers,paste0('data/',Sys.Date(),'_top_gainers','.csv'))
+#write_csv(top_gainers,paste0('data/',Sys.Date(),'_top_gainers','.csv'))
 
 #getwd()
 
